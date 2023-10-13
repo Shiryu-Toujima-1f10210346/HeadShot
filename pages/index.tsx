@@ -36,6 +36,8 @@ function Index() {
 
   return (
     <div>
+      <a href="/company">企業一覧</a>
+      <br />
       <input type="number" onChange={handleInputChange} placeholder="AIM" />
       <Chart data={data} width={500} height={500} outerRadius={200} />
       <Deviation />
