@@ -2,7 +2,7 @@ import Chart from "@/components/Chart";
 import Deviation from "@/components/Deviation";
 import OfferList from "@/components/offerList";
 import React, { useState } from "react";
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography, Grid } from "@mui/material";
 
 function Index() {
   const [data, setData] = useState([
@@ -14,17 +14,22 @@ function Index() {
     { ability: "ほげ", A: 65, B: 85, fullMark: 150 },
   ]);
 
-  const newsData = [
-    { companyName: "株式会社フルーリオ", description: "TypeScriptCh" },
-    {
-      companyName: "株式会社ほげんぽつ",
-      description: "めちゃくちゃブラック企業です！非推奨",
-    },
-  ];
-  const [limit, setLimit] = useState(7); // 新しいstate変数
+  const Data = {
+    companyName: "株式会社ほげんぽつ",
+    description: "めちゃくちゃブラック企業です！非推奨",
+  };
+
+  const n = 10;
+
+  const newsData = Array.from({ length: n }, (_, i) => ({
+    companyName: `${Data.companyName} ${i + 1}`,
+    description: `${Data.description} ${i + 1}`,
+  }));
+
+  const [limit, setLimit] = useState(2); // 新しいstate変数
 
   const handleShowMore = () => {
-    setLimit((prevLimit) => prevLimit + 7);
+    setLimit((prevLimit) => prevLimit + 5);
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {

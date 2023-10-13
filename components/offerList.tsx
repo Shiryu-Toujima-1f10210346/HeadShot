@@ -25,7 +25,13 @@ function OfferList({
 }: OfferListProps) {
   return (
     <Paper style={{ width, height, ...offerListStyle }}>
-      <Image src="/images/companyLogo.png" width={50} height={50} alt="logo" />
+      <Image
+        src="/images/companyLogo.png"
+        width={50}
+        height={50}
+        alt="logo"
+        style={{ borderRadius: "20%" }}
+      />
       <p>{companyName}</p>
       <p>{description}</p>
       <span>詳細</span>
