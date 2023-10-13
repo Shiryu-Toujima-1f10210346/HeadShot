@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.topBox {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.middleBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  border: 2px solid red;
+}
+
+.rightBox {
+  margin-left: 2rem;
+  border: 2px solid blue;
+}
+
+.bottomBox {
+  margin-top: 2rem;
+  border: 2px solid green;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid yellow;
+}
