@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .table-header {
+      background-color: #F3F3F3;
+    }
+    .border-b {
+      border-bottom: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto px-4 py-2">
+    <div class="flex justify-between items-center border-b pb-2">
+      <div class="text-2xl font-bold">履歴書</div>
+      <div class="text-sm">
+        <div>年　月　日現在</div>
+        <div class="text-right">写真貼付欄</div>
+        <div class="text-right text-xs">(6ヶ月以内に撮影したもの)</div>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-start border-b py-2">
+      <div class="w-1/2">
+        <div class="table-header px-2 py-1">ふりがな</div>
+        <div class="px-2 py-8">氏名</div>
+      </div>
+      <div class="w-1/2">
+        <div class="table-header px-2 py-1">生年月日</div>
+        <div class="px-2 py-8">昭和　　年　　月　　日生（満　　歳）</div>
+      </div>
+    </div>
+
+    <div class="border-b py-2">
+      <div class="table-header px-2 py-1">ふりがな</div>
+      <div class="px-2 py-8">現住所（〒　　　－　　　）</div>
+    </div>
+
+    <div class="border-b py-2">
+      <div class="table-header px-2 py-1">ふりがな</div>
+      <div class="px-2 py-8">連絡先（〒　　　－　　　）</div>
+      <div class="px-2 py-1">(現住所以外に連絡を希望する場合のみ記入)</div>
+    </div>
+
+    <div class="flex justify-between items-start border-b py-2">
+      <div class="w-1/2">
+        <div class="table-header px-2 py-1">電話</div>
+        <div class="px-2 py-8">E-mail</div>
+      </div>
+      <div class="w-1/2">
+        <div class="table-header px-2 py-1">電話</div>
+        <div class="px-2 py-8">E-mail</div>
+      </div>
+    </div>
+
+    <div class="border-b py-2">
+      <div class="table-header px-2 py-1">学　歴・職　歴</div>
+      <div class="px-2 py-24"></div>
+    </div>
+
+    <div class="border-b py-2">
+      <div class="table-header px-2 py-1">免許・資格</div>
+      <div class="px-2 py-24"></div>
+    </div>
+
+    <div class="border-b py-2">
+      <div class="table-header px-2 py-1">志望の動機、自己PR、趣味、特技など</div>
+      <div class="px-2 py-24"></div>
+    </div>
+
+    <div class="border-b py-2">
+      <div class="table-header px-2 py-1">本人希望記入欄</div>
+      <div class="px-2 py-24"></div>
+    </div>
+
+    <div class="py-2">
+      <div class="table-header px-2 py-1">保護者等</div>
+      <div class="px-2 py-8">(特に記載することがなければ、この欄には何も記入しないでください)</div>
+    </div>
+  </div>
+</body>
+</html>
